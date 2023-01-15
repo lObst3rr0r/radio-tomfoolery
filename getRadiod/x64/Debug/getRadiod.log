@@ -1,0 +1,3 @@
+﻿  getRadiod.cpp
+getRadiod.obj : error LNK2019: unresolved external symbol __imp_PlaySoundA referenced in function main
+C:\Users\user\source\repos\getRadiod\x64\Debug\getRadiod.exe : fatal error LNK1120: 1 unresolved externals
