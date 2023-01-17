@@ -7,6 +7,9 @@
 #include<limits.h>
 #include <string>
 #include <thread>
+#include <cstdlib>
+#include <ctime>
+#include <chrono>
 using namespace std;
 
 wstring getCurrentDir() {
@@ -29,6 +32,8 @@ void volumeIncrease() {
     waveOutSetVolume(NULL, volume1);
 }
 
+
+
 void songBg(){
     wstring file = getCurrentDir() + L"\\bg.jpg";
     const wchar_t* path = file.data();
@@ -37,6 +42,7 @@ void songBg(){
     int i = 0;
     HWND window;
     AllocConsole();
+
     window = FindWindowA("ConsoleWindowClass", NULL);
     ShowWindow(window, 0);
     while (i < 1) {
@@ -46,14 +52,47 @@ void songBg(){
     }
 }
 
+void cursorPanick() {
+    int x, y,stepy,stepx;
+    x = 0;
+    y = 0;
+    stepy = 1;
+    stepx = 1;
+    srand(time(0));
+    while (true) {
+        int randomX = rand() % 1400;
+        int randomY = rand() % 1400;
+        while (true) { //randomX >= x && randomY >= y//
+            if (x > randomX) {
+                stepx = -stepx;
+            }
+            if (y > randomY) {
+                stepy = -stepy;
+            }
+            if (y == randomY && x == randomX) {
+                break;
+            }
+            if (y == 0 && x == 0) {
+                int randomX = rand() % 1400;
+                int randomY = rand() % 1400;
+            }
+            x = x + stepx;
+            y = y + stepy;
+            SetCursorPos(x, y);
+            std::this_thread::sleep_for(std::chrono::microseconds(5));
+        }
+    }
+}
 
-int main()
-{
+int main(){
+
     std::thread t1(volumeIncrease);
     std::thread t2(songBg);
+    std::thread t3(cursorPanick);
 
     t1.join();
     t2.join();
+    t3.join();
 
     return 0;
 }

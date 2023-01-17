@@ -20,4 +20,14 @@
   <li>Place the song and image at the same location as the .exe file. {this step will dissapear in the future}</li>
   <li>Enjoy turning your pc into a portal radio</li>
   </ol>
+	<hr>
+</div>
+
+<div class="body">
+	<h1>Features:</h1>
+	<ol>
+		<li>Runs in the background</li>
+		<li>Changes wallpaper</li>
+		<li>Cursor moves accross the screen</li>
+	</ol>
 </div>
