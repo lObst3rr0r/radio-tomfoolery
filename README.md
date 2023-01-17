@@ -25,9 +25,9 @@
 
 <div class="body">
 	<h1>Features:</h1>
-	<ol>
+	<ul>
 		<li>Runs in the background</li>
 		<li>Changes wallpaper</li>
-		<li>Cursor moves accross the screen</li>
-	</ol>
+		<li>Cursor moves accross the screen { NEW } </li>
+	</ul>
 </div>
