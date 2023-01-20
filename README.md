@@ -19,6 +19,8 @@
   <li>Compile it using gcc | Be sure to include the linker *winmm.lib*</li>
   <li>Place the song and image at the same location as the .exe file. {this step will dissapear in the future}</li>
   <li>Enjoy turning your pc into a portal radio</li>
+  <h1>Released version</h1>
+  <p>You can use the released version at the Releases tab to download the already compiled code.</p>
   </ol>
 	<hr>
 </div>
@@ -28,6 +30,7 @@
 	<ul>
 		<li>Runs in the background</li>
 		<li>Changes wallpaper</li>
-		<li>Cursor moves accross the screen { NEW } </li>
+		<li>Cursor moves accross the screen and does geometrical shapes (square,rectangle and a star) </li>
+		<li>CMD window that bounces accross the screen and changes color</li>
 	</ul>
 </div>
