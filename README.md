@@ -1,5 +1,5 @@
 
-# Warning, you need to install this the C++ redistributables in order to work. Currently working on a fix on that ! <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170" target="about_blank">link here</a>
+# Warning, you need to install the C++ redistributables so that the program works. Currently working on a fix on that ! <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170" target="about_blank">link here</a>
 <div class="head">
 
   <h1>What this program does:</h1>
