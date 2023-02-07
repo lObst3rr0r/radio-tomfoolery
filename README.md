@@ -1,4 +1,4 @@
-
+## {stopped working on the program. Feel free to fork it }
 # Warning, you need to install the C++ redistributables so that the program works. Currently working on a fix on that ! <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170" target="about_blank">link here</a>
 <div class="head">
 
